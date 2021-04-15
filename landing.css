@@ -20,7 +20,9 @@ body{
   justify-content: space-between;
   font-size: 16px;
   font-weight: 400;
-  color: #4F5665
+  color: #4F5665;
+  margin: 5px 0;
+
 }
 
 nav{
