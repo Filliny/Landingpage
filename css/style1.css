@@ -1,0 +1,152 @@
+.carousel_inn{
+  /* max-width: 900px; */
+  width: 100%;
+  margin: 0 100px;
+}
+
+.carousel img{
+  max-height: 500px;
+}
+
+.slick-arrow {
+  background: #b8f117;
+  border-radius: 20px;
+}
+
+.slick-arrow:hover {
+  background: #e70e07;
+  border-radius: 20px;
+}
+
+.slick-prev::before {
+  content: url('../img/arrow-circle-left-solid.svg ') ;
+
+}
+
+.slick-next::before {
+  content: url('../img/arrow-circle-right-solid.svg');
+}
+
+
+.arrowsa {
+  display: grid;
+  grid-template-rows: 20px 20px 20px;
+  grid-template-columns: auto 20px 20px 20px auto;
+
+}
+
+.slick-initialized .slick-slide {
+  /* display: flex; */
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row;
+}
+
+.carousel, .carousel2 {
+  /* width: 70% !important;
+  display: flex !important; */
+  flex-flow: row;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.r_card{
+  width: 400px;
+  height: 230px;
+  background: #FFFFFF;
+  border: 2px solid #DDDDDD;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 10px 0;
+
+  display: grid;
+  grid-template-columns: 30px 50px 240px 25px 25px 10px 20px;
+  grid-template-rows: 30px 25px 25px 10px 110px 30px;
+
+}
+
+.r_card_shdw{
+  visibility: hidden;
+  position: relative;
+  margin: 0 40px;
+  width: 318.35px;
+  height: 300.81px;
+  z-index: -1;
+  background: #0D1025;
+  opacity: 0.06;
+  filter: blur(50px);
+  border-radius: 10px;
+}
+
+.r_card img{
+  width: 50px;
+  height: 50px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.r_name{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0B132A;
+  margin-left: 21px;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.r_location{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5665;
+  margin-left: 21px;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.rating {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0B132A;
+  margin: 10px auto;
+  grid-column-start: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.star {
+  width: 16px;
+  height: 17px;
+  background: url(img/star.png);
+  background-repeat: no-repeat;
+  margin: 17px auto;
+  grid-column-start: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.r_text{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0B132A;
+  grid-row-start: 5;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.r_card:hover {
+  border: 2px solid #F53838;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.r_card:hover .r_card_shdw {
+  visibility: visible;
+}

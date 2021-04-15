@@ -462,6 +462,135 @@ h6 span{
   flex-wrap: wrap;
 }
 
+
+/* #region slick */
+
+.slick-prev, .slick-next{
+  position: relative;
+}
+
+.slideslick .slide{
+  min-height: 290px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+/* note:next and prev exchanged by name cos have
+different behaviour than expected */
+
+.slick-prev {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: #FFFFFF;
+  border: 2px solid #F53838;
+  box-sizing: border-box;
+  grid-column-start: 12;
+  /* grid-column-end: 14; */
+  grid-row-start: 3;
+  grid-row-end: 4;
+  left: 0;
+
+}
+
+.slick-prev:hover {
+  background: #F53838;
+
+}
+
+.slick-prev::before{
+  background: url(img/arr_left.png);
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.slick-prev:hover::before {
+  background: url(img/arr_left_a.png);
+  background-repeat: no-repeat;
+}
+
+.slick-prev:active::before {
+  background: url(img/arr_left.png);
+  background-repeat: no-repeat;
+}
+
+
+.slick-next {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: #FFFFFF;
+  border: 2px solid #F53838;
+  box-sizing: border-box;
+  grid-column-start: 16;
+  /* grid-column-end: 16; */
+  grid-row-start: 3;
+  grid-row-end: 4;
+  right: 0;
+
+}
+
+.slick-next:hover {
+  background: #F53838;
+
+}
+
+.slick-next::before{
+  background: url(img/arr_right.png);
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.slick-next:hover::before {
+  background: url(img/arr_right_a.png);
+  background-repeat: no-repeat;
+}
+
+.slick-next:active::before {
+  background: url(img/arr_right.png);
+  background-repeat: no-repeat;
+}
+
+.slick-dots {
+    position: relative;
+    bottom: 0;
+    display: inline-flex;
+    grid-column: 3;
+    grid-row: 3;
+    margin-left: -22.5px;
+}
+
+
+.slick-dots li {
+    width: 15px;
+    height: 15px;
+    margin: 0 7.5px;
+}
+
+
+.slick-dots li.slick-active button::before {
+  color: transparent;
+}
+
+.slick-dots li button::before {
+  width: 45px;
+  height: 15px;
+  content: '';
+}
+
+.slick-dots li.slick-active button::before {
+    opacity: .75;
+    color: black;
+    background: red;
+    border-radius: 15px;
+    transition-duration: 1s;
+  }
+
+
+/* #endregion */
+
 .r_card{
   width: 400px;
   height: 230px;
@@ -482,11 +611,11 @@ h6 span{
   position: relative;
   margin: 0 40px;
   width: 318.35px;
-  height: 300.81px;
+  height: 240.81px;
   z-index: -1;
   background: #0D1025;
   opacity: 0.06;
-  filter: blur(50px);
+  filter: blur(30px);
   border-radius: 10px;
 }
 
@@ -566,124 +695,44 @@ h6 span{
   width: 100%;
   display:grid;
   grid-template-columns: 1px 15px 15px 15px 15px 15px 15px 15px 15px 15px auto 22.5px 15px 22.5px 20px 22.5px 15px 22.5px 150px;
-  grid-template-rows: 60px 22px 15px 23px;
+  grid-template-rows: 1px 22px 15px 23px;
 }
 
-.ellipse1 {
+/* ellipse */
+
+.ellipse {
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  background: #F53838;
+  background: #DDE0E4;
+}
+
+.ft {
   grid-column-start: 2;
   grid-row-start: 3;
 }
 
-.ellipse2 {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  background: #F53838;
+.sd {
   grid-column-start: 4;
   grid-row-start: 3;
 }
 
-.ellipse3 {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  background: #DDE0E4;
+.td {
   grid-column-start: 6;
   grid-row-start: 3;
 }
 
-.ellipse4 {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  background: #DDE0E4;
+.fr {
   grid-column-start: 8;
   grid-row-start: 3;
 }
 
-.ellipse5 {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  background: #DDE0E4;
+.fv {
   grid-column-start: 10;
   grid-row-start: 3;
 }
 
-.bridge {
-  width: 30px;
-  height: 15px;
-  background: #F53838;
-  margin: 0 7.5px;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-}
-
-.reviews_left {
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
-  background: #FFFFFF;
-  border: 2px solid #F53838;
-  box-sizing: border-box;
-  grid-column-start: 12;
-  grid-column-end: 14;
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
-
-.reviews_right {
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
-  background: #FFFFFF;
-  border: 2px solid #F53838;
-  box-sizing: border-box;
-  grid-column-start: 16;
-  grid-column-end: 18;
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
-
-.nav_arrow_l{
-  width: 20px;
-  height: 20px;
-  background: url(img/arr_left.png);
-  background-repeat: no-repeat;
-  margin: 19px;
-}
-
-.nav_arrow_r{
-  width: 20px;
-  height: 20px;
-  background: url(img/arr_right.png);
-  background-repeat: no-repeat;
-  margin: 19px;
-}
-
-.reviews_left:hover {
-  background: #F53838;
-}
-
-.reviews_left:hover .nav_arrow_l{
-  background: url(img/arr_left_a.png);
-  background-repeat: no-repeat;
-}
-
-
-.reviews_right:hover {
-  background: #F53838;
-}
-
-.reviews_right:hover .nav_arrow_r{
-  background: url(img/arr_right_a.png);
-  background-repeat: no-repeat;
-}
+/* elipse */
 
 /* endregion */
 
