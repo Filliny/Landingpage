@@ -506,6 +506,7 @@ different behaviour than expected */
   background: url(img/arr_left.png);
   background-repeat: no-repeat;
   color: transparent;
+  line-height: 3;
 }
 
 .slick-prev:hover::before {
@@ -543,6 +544,7 @@ different behaviour than expected */
   background: url(img/arr_right.png);
   background-repeat: no-repeat;
   color: transparent;
+  line-height: 3;
 }
 
 .slick-next:hover::before {
@@ -624,6 +626,7 @@ different behaviour than expected */
 .r_card img{
   width: 50px;
   height: 50px;
+  border-radius: 50%;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
