@@ -1,3 +1,3 @@
 # Landingpage
 
-fronted layout implementation from given termplate
+fronted layout implementation from given template
